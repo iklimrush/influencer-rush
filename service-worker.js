@@ -1,5 +1,5 @@
-const CACHE_NAME = "influencer-rush-v1";
-const APP_FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
+const CACHE_NAME = "influencer-rush-v2";
+const APP_FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.png"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)));
   self.skipWaiting();
